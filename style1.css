@@ -1,0 +1,265 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* VARIABLES CSS */
+
+:root {
+    --header-height: 3rem;
+    --hue-color:250;
+    --first-color: hsl(var(--hue-color),69%,61%);
+    --first-color-second: hsl(var(--hue-color),69%,61%);
+    --first-color-alt: hsl(var(--hue-color),57%,53%);
+    --first-color-lightner:hsl(var(--hue-color),92%,85%); 
+    --title-color:hsl(var(--hue-color),8%,15%); 
+    --text-color:hsl(var(--hue-color),8%,45%);
+    --text-color-light:hsl(var(--hue-color),8%,65%); 
+    --input-color:hsl(var(--hue-color),70%,96%) ;
+    --body-color:hsl(var(--hue-color)60%,99%) ;
+    --container-color:#FFF;
+
+
+    --body-font:'Poppins',sans-serif;
+    
+
+    --big-font-size:2rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.2rem;
+    --h3-font-size:1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size:.813rem;
+    --smaller-font-size: .75rem;
+
+    --font-medium: 500;
+    --font-semi-bold:600;
+
+    --mb-0-25:.25rem;
+    --mb-0-5:.5rem;
+    --mb-0-75:.75rem;
+    --mb-1:1rem;
+    --mb-1-5:1.5rem;
+    --mb-2:2rem;
+    --mb-2-5:2.5rem;
+    --mb-3:3rem;
+
+    --z-tooltip:10;
+    --z-fixed:100;
+    --z-modal:1000;
+}
+h1,h2,h3,h4{
+    color:var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+ul{
+    list-style:none;
+}
+a{
+   text-decoration:none; 
+}
+
+img{
+   max-width: 100%; 
+   height:auo;
+}
+body {
+    background: #ff5f6d;
+    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    min-height: 1000vh;
+  }
+  
+  #button-addon1 {
+    color: #ffc371;
+  }
+  
+  i {
+    color: #ffc371;
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+  .navbar-light {
+    display: none;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    padding: 25px 10px;
+    color: #343a40;
+    font-weight: 500;
+    outline: none;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #0BCEAF;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+      padding: 10px 0;
+    }
+  }
+  /*===================== Hero section ======================*/
+
+.about-img{
+    margin-left: -100px;
+    right: -60px;
+   }
+   
+   .display-1{
+     font-size: 160px;
+     font-weight: 1000;
+   
+   }
+   
+   .position-absolute{
+     font-weight: 500;
+   
+   }
+   
+   .typed-cursor {
+     font-size: 45px;
+     color: #ffffff;
+   }
+   
+   .blue{
+     background-color: #1c5ce6;
+     color: #ffffff;
+   }
+   .btn{
+     border: 2px solid rgb(29, 105, 247);
+   } 
+   .btn-white{
+     background-color: #ffffff;
+     border:2px solid #ffffff;
+   }
+   .btn-blue{
+     border: 2.4px solid #ffffff;
+     color: #ffffff;
+   }
+   @media (max-width: 700px) {
+     .about-img{
+       margin-left: 20px;
+       right: 0px;
+       top: 30px;
+      }
+   }
+   /*===================== Progress Bar ====================*/
+
+.progress {
+    border-radius: 10px;
+  }
+  
+  .progress .progress-bar {
+    width: 0px;
+    border-radius: 10px;
+    transition: 2s;
+  }
+  /* =================== Queality ======================*/
+.ex-me{
+    margin-top: 35px;
+  }
+  /* =================== Service Section ==================*/
+.service-h4{
+    padding-bottom: 30px;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+  }
+  
+  .service-box{
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);  
+    margin-left: 20px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .service-box:hover{
+    box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705); 
+  
+  }
+          
+  .portfolio-item .portfolio-btn {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    top: 30px;
+    left: 30px;
+  }
+  /* ====================== Testimonial ================*/
+.testimonial-carousel .text-center{
+    background-color: #eaecf0d0;
+    border-radius: 20px;
+    margin: 20px;
+  
+  }
+  .testimonial-carousel .text-center h4{
+  
+  }
+  
+  .testimonial-carousel .owl-dots {
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .testimonial-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #dddddd;
+  }
+  
+  .testimonial-carousel .owl-dot.active {
+    background: #0BCEAF;
+  }
+  .contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+ 
+  .button{
+  display: flex; 
+  align:center;   
+
+ }
+ .change-theme{
+    font-size:1.25rem;
+    color:var(--title-color);
+    margin-right:var(--mb-1); 
+    cursor:pointer;
+ }
+ .change-theme:hover{
+     color:var(--first-color);
+
+ }
+ body.dark-theme{
+    
+        background-color: black;
+        color: white;
+ }
+  
